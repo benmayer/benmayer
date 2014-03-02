@@ -1,4 +1,8 @@
 benmayer
 ========
 
-Hi I'm Ben. I make websties. This is my mine.
+Hi I'm Ben. I make websties. 
+
+<a href="http://benmayer.github.io/">This is mine</a>
+
+
