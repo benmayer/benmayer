@@ -1,63 +1,55 @@
-<!doctype html>
-<html>
-<head>
-    <title>Ben Mayer // i make wbsites</title>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <style>
-        html{
-            height:100%;
-            }
-        body{
-            font:100 200%/1.4 'Helvetica Neue', Helvetica, sans-serif;
-            text-align:center;
-            color:#333;
-            }
-        .bg{
-            background:#fff url(img/bg.jpg) center no-repeat;
-            -webkit-background-size:cover;
-            -moz-background-size:cover;
-            -ms-background-size:cover;
-            background-size:cover;
-            
-            position:fixed;
-            width:100%;
-            height:100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        h1{
-            font-size:500%;
-            font-weight:inherit;
-            margin-bottom:0.5em;
-            }
-        h2{
-            font-size:200%;
-            font-weight:inherit;
-            margin-top:0;
-            }
-        a{
-            color:inherit;
-            text-decoration:none;
-            padding:0 .2em;
-            
-            }
-        .fa-twitter:hover{color:#08C;}
-        .fa-instagram:hover{color:#1C5380;}
-        
-        @media all and (max-width:500px){
-            body{font-size:100%;}
-            a{font-size:200%;}
-        }
-        
-    </style>
-</head>
-<body>
-    <div class="bg"></div>
-    
-    <h1>Hi I'm Ben.</h1>
-    <h2>I make websites</h2>
-    <a href="https://twitter.com/intent/user?original_referer=http%3A%2F%2Fassets.txmblr.com%2Fcustomize_preview_receiver.html%3F6333df3fc6ec31941ecfcc352c9213e5&region=following&screen_name=mayer_ben&tw_p=followbutton&variant=2.0" class="" data-show-count="false" data-show-screen-name="false" data-dnt="true"><i class="fa fa-twitter"></i></a>
-    <a href="http://instagram.com/mayer_ben"><i class="fa fa-instagram"></i></a>
-</body>
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>Ben's London</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/ben-london.min.css">
+    <!-- <style type="text/css">
+      html,body,#map{height:100%;margin:0;padding:0;font:100%/1.4 'Helvetica Neue',sans-serif;background:#FFF!important}a{color:inherit;text-decoration:inherit}
+      header{display:block;position:fixed;top:20px;left:10%;right:10%;padding:.5em;background:white;z-index:10;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+      h1{float:left;margin:0;font-weight:100;font-size:1.5em;text-decoration:none}.spots{text-align:center;position:absolute;z-index:999999}.spots .title{display:none;position:absolute;width:100%;top:205px;text-align:center;z-index:99}
+      .spots span{display:inline-block;padding:.5em;background:white}.spots .img{display:block;position:relative;width:100px;height:100px;background:#000;border-radius:1000px;border:5px solid #fff;overflow:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+      .spots img{position:absolute;max-width:100%;top:0;left:0;-webkit-transition:width .1s ease;-o-transition:width .1s ease;transition:width .1s ease}.closeup .img{width:200px;height:200px}
+      .closeup .title{display:block}.noscript{display: none} .no-js .noscript{position:absolute;height:100%;width:100%;display:table;}.noscript p{display: table-cell;vertical-align: middle;text-align: center;}.contact{float:right;font-size: 1.5em;}
+    </style>-->
+  </head>
+  <body>
+    <header>
+      <h1><a href="/ben/">Ben's London</a></h1>
+      <div class="contact">
+        <a href="http://twitter.com/mayer_ben" class="fa fa-twitter" ></a>
+        <a href="http://instagram.com/mayer_ben" class="fa fa-instagram"></a></div>
+    </header>
+    <div class="noscript">
+      <p>Onfortunatly there isn't much to see here without JavaScript turned on.</p>
+    </div>
+    <div id="map"></div>
+  
+
+    <script type="text/javascript">
+      document.documentElement.className = 'js';
+      function loadScript(src){
+        var script = '<script type="text/javascript" src="'+src;
+        script += '"><' + '/script>';
+        document.write(script);
+      }    
+      function loadStyle(href){
+        var tag = document.createElement('link');
+        tag.type = 'text/css';
+        tag.href = href;
+        tag.rel = 'stylesheet';
+        document.head.appendChild(tag);
+      }
+      loadStyle('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+      loadStyle('src/jquery.fancybox.css?v=2.1.5');
+
+      loadScript('http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
+      loadScript('http://maps.google.com/maps/api/js?sensor=false');
+      loadScript('js/richmarker.min.js');
+      loadScript('js/ben-london.min.js');
+      loadScript('js/functions.js');
+      loadScript('js/jquery.fancybox.min.js');
+    </script>
+  </body>
 </html>
